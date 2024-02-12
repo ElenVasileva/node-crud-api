@@ -10,6 +10,6 @@ export default class User {
         this._id = uuidv4();
         this._userName = userName;
         this._age = age;
-        this._hobbies = hobbies;
+        this._hobbies = hobbies || [];
     }
 }

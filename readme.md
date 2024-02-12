@@ -10,6 +10,6 @@
 
 1. get users: `http://localhost:8000/users`
 1. get user: `http://localhost:8000/users/aa65f789-bf33-404a-9c56-b836ecb648be`
-1. create user: `fetch('http://localhost:8000/users', {  method: "POST", body: JSON.stringify({ age: 60, hobbies: ["reading"], userName: "Leonid" }) })`
-1. update user: `fetch('http://localhost:8000/users/aa65f789-bf33-404a-9c56-b836ecb648be', {  method: "PUT", body: JSON.stringify({ age: 60, hobbies: ["reading"], userName: "Leonid" }) })`
+1. create user: `fetch('http://localhost:8000/users', {  method: "POST", body: '{"age":60,"hobbies":["reading"],"userName":"Leonid"}' })`
+1. update user: `fetch('http://localhost:8000/users/aa65f789-bf33-404a-9c56-b836ecb648be', {  method: "PUT", body: '{"age":60,"hobbies":["reading"],"userName":"Leonid"}' })`
 1. delete user: `fetch('http://localhost:8000/users/aa65f789-bf33-404a-9c56-b836ecb648be', { method: "DELETE" })`
