@@ -1,10 +1,13 @@
-import http from "http"
+import http from 'http'
+import dotenv from 'dotenv'
 
 import requestListener from './src/requestListener'
 
 
 const host = 'localhost';
-const port = 8000;
+
+dotenv.config();
+const port = process.env.PORT as unknown as number;
 
 const server = http.createServer(requestListener);
 server.listen(port, host, () => {
