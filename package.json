@@ -1,0 +1,30 @@
+{
+  "name": "node-crud-api",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start:dev": "nodemon -x ts-node App.ts",
+    "start:prod": "ts-node App.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElenVasileva/node-file-manager.git"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.8",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^3.0.3",
+    "prettier": "^2.8.8",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.2",
+    "uuid": "^9.0.1"
+  }
+}
